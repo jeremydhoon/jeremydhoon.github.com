@@ -17,14 +17,14 @@ tags: ["ml"]
 Modern [machine learning](http://en.wikipedia.org/wiki/Support_vector_machine)
 [techniques](http://en.wikipedia.org/wiki/
 Deep_learning#Deep_Learning_in_Artificial_Neural_Networks)
-are so powerful that hardest part of training a
+are so powerful that the hardest part of training a
 classifier is often getting training data into the right format. What if
 we could skip all the tedious preparation and train a classifier on
 virtually any kind of data? In this post, I'll go
 over the trouble with preparing data for machine learning, and then describe
 [hashkernel](https://github.com/jeremydhoon/hashkernel/),
 a Python module I wrote to demonstrate how a technique called *hash kernels*
-avoids these pitfalls.
+can avoid these pitfalls.
 
 While I hope that this post will be accessible to readers without any
 experience with machine learning, you may find it easier to follow along if
@@ -53,12 +53,12 @@ Yet data in real-world applications is much messier. For starters, the
 features in a real-world dataset rarely all share the same data type.
 Fields present in one
 [instance](http://robotics.stanford.edu/~ronnyk/glossary.html)
-may be missing in another. To easily training a classifier in the real world,
+may be missing in another. To easily training a classifier on real world data,
 we need to be able to convert data in an arbitrary format consisting of
 mixed of types into a feature vector that a classifier can understand.
 
 Computer scientists working in the area of *text classification*
-understand this problem quite well, since intances in this area are simply
+understand this problem quite well, since instances in this area are simply
 strings of text -- a format far different from traditional feature vectors.
 For example, one might wish to classify an email message
 as "spam" or "ham". In order to do so, the text of each email message must be
@@ -70,7 +70,7 @@ In bag-of-words, we assign an index to each distinct word that appears in
 any training instance.
 The resulting feature vector has length
 *max_word_index + 1*. Each entry in the feature vector is either one
-if the word for the entry's index is present, or zero otherwise.
+of the word for the entry's index is present, or zero otherwise.
 
 Bag-of-words can be unwieldy.
 First, we might need to know every English word.
@@ -109,7 +109,7 @@ is a feature (one if the word is found in an input text, or zero if absent),
 we hash that word to obtain an index in the array. We then add the
 value of the feature to the array entry at that index, with a few twists.
 [Weinberg et al.](http://alex.smola.org/papers/2009/Weinbergeretal09.pdf)
-suggest adding or subtracting the value of the feature based according to
+suggest adding or subtracting the value of the feature according to
 another hash function. Here's a more concrete description of
 Weinberg's method, expressed in Python:
 
