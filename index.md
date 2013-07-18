@@ -10,9 +10,10 @@ About
 
 I'm [Jeremy](https://github.com/jeremydhoon), an engineer with a passion
 for the kind of software that helps others build phenomenal products and
-services. Currently, I build [systems for fighting spam](
+services. Currenly, I build systems for storing lines of text at Stripe.
+Previously, I built [systems for fighting spam](
 https://www.facebook.com/notes/facebook-engineering/
-fighting-spam-with-pure-functions/10151254986618920) at Facebook. Previously,
+fighting-spam-with-pure-functions/10151254986618920) at Facebook,
 I helped teach machine learning under [David Parkes](http://www.eecs.harvard.edu/~parkes/), and interned at [Fog Creek Software](http://www.fogcreek.com/).
 
 Posts
