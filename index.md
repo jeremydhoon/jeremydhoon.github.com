@@ -10,7 +10,7 @@ About
 
 I'm [Jeremy](https://github.com/jeremydhoon), an engineer with a passion
 for the kind of software that helps others build phenomenal products and
-services. Currenly, I build systems for storing lines of text at Stripe.
+services. Currently, I build systems for storing lines of text at Stripe.
 Previously, I built [systems for fighting spam](
 https://www.facebook.com/notes/facebook-engineering/
 fighting-spam-with-pure-functions/10151254986618920) at Facebook,
